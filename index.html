@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>KUDI'WATCH</title>
+</head>
+<body>
+  <header class="title container">
+    <h2 class="title__heading">
+      KUDI'WATCH
+    </h2>
+  </header>
+  <section class="first__section container">
+    <div class="budget">
+      <h4 class="budget__heading">Available budget for <span class="budget__heading--span"></span></h4>
+      
+      <img src="WhatsApp Image 2020-10-17 at 3.39.52 PM (1).jpeg" alt="null" srcset="" class="image">
+
+      <div class="budget__amount">+0.00</div>
+      <div class="budget__income">
+        <p>INCOME</p>
+        <span class="budget__income--amount">+0.00</span>
+      </div>
+
+      <div class="budget__expense">
+        <p>EXPENSES</p>
+        <span class="budget__expense--amount">-0.00&nbsp;&nbsp; &nbsp;</span><span class="percentage" id="percentageAll"></span>
+      </div>
+    </div>
+  </section>
+  <section class="second__section container">
+    <div class="input__section">
+      <select class="select">
+        <option value="inc" for="income" selected>+</option>
+        <option value="exp" for="income">-</option>
+      </select>
+      <input type="text" name="text" id="input-text">
+      <input type="number" name="number" id="input-number">
+      <a href="#" class="input-link"><ion-icon name="checkmark-done-outline" class="markicon"></ion-icon>
+      </a>
+    </div>
+  </section>
+  <section class="third__section container">
+    <div class="button">
+  <a href="#income_" class="btn btn-primary">Show income</a>
+  <!-- <a href="#" class="btn btn-secondary">Show All</a>    -->
+  <a href="#expense_" class="btn btn-tet">Show Expenses</a>
+    </div>
+  
+    
+
+  </section>
+  <section class="fourth__section container">
+    <div class="grid">
+  <div class="income_" id="income_">
+    <h3>INCOME</h3>
+    <ul class="income--list">
+      <!-- <li id="list-0">
+        <div class="flexitem-1">
+        food: 2000&nbsp; 
+        </div>
+        
+        <div class="flexitem-2">      
+          <ion-icon name="trash-outline" class="edit"></ion-icon>
+      </div>
+        </li> -->
+     
+    </ul>
+
+  </div>
+  <div class="expense_" id="expense_">
+    <h3>EXPENSES</h3>
+    <ul class="expense--list">
+      <!-- <li>
+        <div class="flexitem-1">
+        food: 2000&nbsp; <span class="percentage percentageEach" id="percentageEach">100%</span> 
+        </div>
+        
+        <div class="flexitem-2">
+          <ion-icon name="trash-outline" class="edit"></ion-icon>
+      </div>
+        </li> -->
+     
+    </ul>
+  </div>
+</div>
+  </section>
+  
+  <footer class="footer container">
+    <p>made with love <ion-icon name="heart-half-outline" ></ion-icon></p>  
+  </footer>
+
+
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ul{
+  list-style: none;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  color: #555;
+  font-family:'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 76rem;
+  text-align: center;
+  background-image:linear-gradient(rgba(0,0,0, 0.8),rgba(0,0,0, 0.8)),url(WhatsApp\ Image\ 2020-10-17\ at\ 3.39.52\ PM.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title{
+margin-top: 8rem;
+background-color: rgb(255, 255, 0);
+/* border: 1px solid #333; */
+padding: 3rem 0;
+}
+
+.title__heading{
+font-size: 2.5rem;
+text-align: right;
+padding-right: 3rem;
+}
+
+.budget{
+position: relative;
+width: 100%;
+height: 50vh;
+overflow: hidden;
+text-align: left;
+/* margin-top: 2rem; */
+padding-top: 2rem;
+
+background-color: white;
+z-index: 3;
+}
+
+.image{
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  width: 50%;
+  max-width: 50%;
+  height: 100%;
+  z-index: 1;
+  
+}
+
+.budget__heading{
+ position: absolute;
+ width: 100%;
+ top: 1rem;
+ left: 1rem;
+ padding-left: 1rem;
+ z-index: 3;
+ font-size: 2rem;
+ font-weight: bold;
+ text-align: center;
+ /* transform: translate(50%, 50%); */
+ z-index: 15;
+}
+
+.budget__amount{
+position: absolute;
+width: 100%;
+top: 25%;
+left: 40%;
+transform: translate(-20%, -20%);
+font-size: 6rem;
+font-weight: 100;
+color: black;
+z-index: 50;
+}
+
+.budget__income{
+position: absolute;
+width: 80%;
+top: 50%;
+left: 3%;
+z-index: 0;
+background-color: greenyellow;
+padding: 1.3rem 1rem;
+}
+
+.budget__income p{
+display: inline;
+font-size: 2rem;
+}
+
+.budget__income--amount{
+padding-left: 11.1rem;
+font-size: 1.9rem;
+color: black;
+}
+
+.budget__expense{
+  position: absolute;
+  width: 80%;
+  top: 70%;
+  left: 3%;
+  z-index: 0;
+  background-color: orangered;
+  padding: 1.3rem 1rem;
+}
+.budget__expense p{
+  display: inline;
+  font-size: 2rem;
+}
+
+.budget__expense--amount{
+  padding-left: 9rem;
+  font-size: 1.9rem;
+  color: black;
+}
+
+.percentage{
+border: 1px solid rgb(49, 3, 49);
+padding: 0 .4rem;
+color: rgb(49, 3, 49);
+font-size: 1rem;
+font-weight: bold;
+}
+
+
+.input__section{
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  width: 100%;
+  text-align: left;
+  padding-left: 8rem;
+}
+
+select{
+  padding: 1.2rem .5rem;
+  outline: none;
+  width: 8%;
+  font-size: 1.8rem;
+}
+
+select:focus{
+  border: 2px solid rgb(89, 148, 0);
+}
+
+input{
+  font-size: 1.8rem;
+}
+
+input:focus{
+  border: 2px solid rgb(89, 148, 0);
+}
+
+input[type=text]{
+  width: 40%;
+  padding: 1.2rem 1rem;
+  margin-left: 1rem;
+  outline: none;
+}
+
+input[type=number]{
+  width: 10%;
+  padding: 1.2rem 1rem;
+  outline: none;
+}
+
+.input-link{
+  display: inline-block;
+  margin-left: 3rem;
+  padding: 1rem 1rem .7rem 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: greenyellow;
+  /* border: 1px solid red; */
+}
+
+.markicon{
+  color: white;
+  font-size: 3rem;
+  line-height: 1.8rem;
+  vertical-align: middle;
+}
+
+.red { background-color: orangered !important; }
+.red-focus:focus { border: 2px solid orangered !important; }
+
+.grid{
+display: grid;
+width: 100%;
+grid-template-columns: 1fr 1fr;
+grid-gap: 2rem;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+}
+
+.income_{
+ background-color: white;
+ border-radius: .5rem;
+ text-align: left;
+ padding: 1rem 1rem;
+}
+.income_ h3,
+.expense_ h3{
+font-size: 2.2rem;
+text-align: center;
+font-weight: bold;
+padding: 1.3rem 0;
+}
+
+.income_ h3{
+  color: rgb(147, 245, 1);
+}
+
+.expense_ h3{
+  color: orangered;
+}
+
+.edit{
+  color: red;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.income--list li,
+.expense--list li{
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 1.8rem;
+font-weight: bold;
+padding: 1rem 1rem;
+
+}
+
+.expense_{
+background-color: white;
+ border-radius: .5rem;
+ text-align: left;
+ padding: 1rem 1rem;
+}
+
+#percentageEach{
+  color: red;
+  border: 1px solid red;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 1rem;  
+    font-size: 1.7rem; 
+    margin-left: 2rem;
+    transition: transform .2s ease;
+}
+
+.btn:hover,
+.btn:active{
+  transform: translateY(-0.5rem);
+}
+
+.btn-primary{
+   background-color: greenyellow;
+   border: 1px solid greenyellow;
+   color: black;
+}
+
+/* .btn-secondary{
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+} */
+.btn-tet{
+  background-color: orangered;
+  border: 1px solid orangered;
+  color: antiquewhite;
+}
+
+.footer{
+  width: 100%;
+  margin-top: 2rem;
+  background-color: rgb(49, 48, 48);
+  border: 1px solid gray;
+}
+
+.footer p{
+  font-size: 1.7rem;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px){
+html{
+ font-size: 55%;
+  }
+
+.image{
+  width: 40%;
+}
+
+}
+@media screen and (max-width: 600px){
+  html{
+   font-size: 53%;
+    }
+  
+  .image{
+    width: 40%;
+  }
+
+  .budget__income--amount{
+    padding-left: 8.1rem;
+   
+  }
+
+  .budget__expense--amount{
+    padding-left: 6rem;
+      
+  }
+  .budget__amount{
+    left: 30%;
+    font-size: 4.5rem;
+  
+  }
+  .grid{
+    grid-gap: 1rem;
+  }
+  .markicon{
+    font-size: 2rem;
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+
+  .input-link{
+    margin-left: .5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  .input__section{
+    padding-left: 4rem;
+  }
+ 
+  }
+
+@media screen and (max-width: 500px){
+  html{
+   font-size: 50%;
+    }
+  
+  .image{
+    width: 50%;
+  }
+
+  .budget__income--amount{
+    padding-left: 8.1rem;
+   
+  }
+
+  .budget__expense--amount{
+    padding-left: 6rem;
+      
+  }
+  .budget__amount{
+    left: 30%;
+    font-size: 4.5rem;
+  
+  }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .budget__expense{
+    z-index: 20;
+  }
+
+  .budget__income{
+    z-index: 20;
+  }
+
+  .markicon{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+
+  .input-link{
+    margin-left: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+  }
+
+  .input__section{
+    padding-left: 4rem;
+  }
+  }
